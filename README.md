@@ -89,7 +89,7 @@ venom
     console.log('There was an error in the bot: ',erro);
   });
 
-function start(client) {
+async function start(client) {
   let inchat = await client.isInsideChat(); //wait until the page is in whatsapp chat
   if (inchat) {
     client.onMessage((message) => {
@@ -199,6 +199,7 @@ venom
   .catch((erro) => {
     console.log('There was an error in the bot',erro);
   });
+})
 ```
 
 ## Callback Status Session
@@ -252,6 +253,7 @@ venom
   .catch((erro) => {
      console.log('There was an error in the bot', erro);
   });
+})
 ```
 
 ## Exporting QR Code
@@ -313,6 +315,7 @@ venom
   .catch((erro) => {
      console.log('There was an error in the bot', erro);
   });
+})
 ```
 
 ## Downloading Files
